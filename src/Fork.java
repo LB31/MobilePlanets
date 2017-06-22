@@ -5,7 +5,7 @@ import java.util.Random;
 import org.lwjgl.opengl.GL11;
 
 import edu.berlin.htw.ds.cg.helper.TextureReader;
-
+import edu.berlin.htw.ds.cg.helper.GLDrawHelper;
 public class Fork {
 
 	private float pitch = 0;
@@ -63,7 +63,7 @@ public class Fork {
 	}
 
 	public void drawFork(boolean left) {
-		GL11.glColor3d(1, 0, 0);
+		GL11.glColor3d(0.7, 0.7, 0.7);
 		GL11.glLineWidth(5);
 
 		// Change yaw. Range from -80 to 80

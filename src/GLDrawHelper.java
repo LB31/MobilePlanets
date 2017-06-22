@@ -1,8 +1,7 @@
 
 
-
-//original code from http://code.google.com/p/oglsuperbible5/source/browse/trunk/Src/GLTools/src/GLTools.cpp
-//Ported to Java by D.Strippgen 2012
+// original code from http://code.google.com/p/oglsuperbible5/source/browse/trunk/Src/GLTools/src/GLTools.cpp
+// Ported to Java by D.Strippgen 2012
 
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
@@ -54,9 +53,9 @@ public class GLDrawHelper {
 	        // for the caps of the sphere. This however introduces texturing 
 	        // artifacts at the poles on some OpenGL implementations
 	        s = 0.0f;
-         float[][] vVertex = new float [4][3] ;
-         float[][] vNormal = new float [4][3] ;
-         float[][] vTexture = new float [4][3] ;
+            float[][] vVertex = new float [4][3] ;
+            float[][] vNormal = new float [4][3] ;
+            float[][] vTexture = new float [4][3] ;
 
 	                for ( j = 0; j < iSlices; j++) 
 	                        {
@@ -286,4 +285,3 @@ public class GLDrawHelper {
 
 
 }
-

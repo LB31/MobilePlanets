@@ -77,6 +77,15 @@ public class Mobile implements InteractiveWorld {
 		} else {
 			GL11.glPolygonMode(GL11.GL_FRONT_AND_BACK, GL11.GL_FILL);
 		}
+		
+		// Move the camera
+		if (Keyboard.isKeyDown(Keyboard.KEY_W)) {
+			cameraPos[2]--;
+		}
+		if (Keyboard.isKeyDown(Keyboard.KEY_S)) {
+			cameraPos[2]++;
+		}
+
 		Display.update();
 	}
 
